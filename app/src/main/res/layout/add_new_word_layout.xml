@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dialogBackgroundColor"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Fill text" />
+
+        <TextView
+            android:id="@+id/destination_word_header"
+            style="@style/NewWordLayoutRowTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header"
+            tools:text="PL :" />
+
+        <EditText
+            android:id="@+id/destination_word"
+            style="@style/NewWordLayoutRowStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/destination_word_header"
+            app:layout_constraintLeft_toRightOf="@+id/destination_word_header"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/destination_word_header"
+            tools:hint="write" />
+
+        <TextView
+            android:id="@+id/translated_word_header"
+            style="@style/NewWordLayoutRowTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/destination_word_header"
+            tools:text="EN :" />
+
+        <EditText
+            android:id="@+id/translated_word"
+            style="@style/NewWordLayoutRowStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/translated_word_header"
+            app:layout_constraintLeft_toRightOf="@+id/translated_word_header"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/translated_word_header"
+            tools:hint="write" />
+
+        <Button
+            android:id="@+id/left_button"
+            style="@style/NewWordLayoutButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/right_button"
+            app:layout_constraintTop_toBottomOf="@+id/translated_word"
+            tools:text="OK" />
+
+        <Button
+            android:id="@+id/right_button"
+            style="@style/NewWordLayoutButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/left_button"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/translated_word"
+            tools:text="CANCEL" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
