@@ -29,4 +29,10 @@ task clean(type: Delete) {
 ext{
     dagger2Version = '2.11'
     androidFeatures = '1.0.0-alpha8'
+    kotlin_version = '1.1.4'
+    androidLibs = '26.0.2'
+    dagger2Version = '2.11'
+    retrofitVersion = '2.1.0'
+    okHttpVersion = '3.5.0'
+    rxjavaAdapter = '2.2.0'
 }

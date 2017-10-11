@@ -14,15 +14,15 @@ class DialogGenerator {
     @Inject
     lateinit var context: Context
 
-    fun getNewWordDialog(inflater :LayoutInflater,settings :NewWordLayoutSettings): AlertDialog {
-        val dialog = AlertDialog(context)
-
-        val dialogView = inflater.inflate(R.layout.add_new_word_layout, null)
-
-        dialog.setView(dialogView)
-
-
-        return dialog
-    }
+//    fun getNewWordDialog(inflater :LayoutInflater,settings :NewWordLayoutSettings): AlertDialog {
+//     //   val dialog = AlertDialog(context)
+//
+//      //  val dialogView = inflater.inflate(R.layout.add_new_word_layout, null)
+//
+//      //  dialog.setView(dialogView)
+//
+//
+//    //    return dialog
+//    }
 
 }

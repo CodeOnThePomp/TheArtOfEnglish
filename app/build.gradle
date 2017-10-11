@@ -10,7 +10,7 @@ android {
     dataBinding.enabled = true
     defaultConfig {
         applicationId "com.martino.jasiu.learnkotlin"
-        minSdkVersion 15
+        minSdkVersion 21
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -63,4 +63,5 @@ dependencies {
 
     compile "com.github.VictorAlbertos.RxCache:runtime:1.8.1-2.x"
     compile 'com.github.VictorAlbertos.Jolyglot:gson:0.0.3'
+    compile project(path: ':data')
 }
