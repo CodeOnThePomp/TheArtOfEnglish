@@ -1,6 +1,7 @@
 package com.martino.jasiu.learnkotlin.general.injection.component
 
 import android.app.Application
+import com.example.data.di.module.DatabaseModule
 import com.martino.jasiu.learnkotlin.db.injection.DaoModule
 import com.martino.jasiu.learnkotlin.general.injection.module.ApplicationModule
 import com.martino.jasiu.learnkotlin.general.injection.module.ActivityBuilder
@@ -12,6 +13,7 @@ import dagger.android.support.AndroidSupportInjectionModule
         AndroidSupportInjectionModule::class,
         ApplicationModule::class,
         DaoModule::class,
+       DatabaseModule::class,
         ActivityBuilder::class))
 interface ApplicationComponent {
 
